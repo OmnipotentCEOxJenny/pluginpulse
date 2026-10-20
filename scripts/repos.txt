@@ -1,0 +1,9 @@
+# GitHub repos to track (owner/name), one per line. Public repos only.
+OmnipotentCEOxJenny/course-correction
+OmnipotentCEOxJenny/browsershield
+OmnipotentCEOxJenny/creative-switchboard
+OmnipotentCEOxJenny/truthtrace
+OmnipotentCEOxJenny/courtesycrawl
+OmnipotentCEOxJenny/pluginpulse
+modelcontextprotocol/servers
+modelcontextprotocol/registry
