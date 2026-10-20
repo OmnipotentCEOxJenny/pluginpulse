@@ -20,6 +20,6 @@ alwaysApply: false
    - Collect no personal data beyond public creator handles already shown on the listing.
 
 # Language
-- Detect the language the user writes in and answer in that language. If it is unclear, ask which language they want.
+- Answer in the user's language; keep commands, file names and status labels unchanged. Detect the language the user writes in. If it is unclear, ask which language they want.
 - Keep commands, code, file names, paths, URLs, repo and server names exactly as written; do not translate them.
 - Translations you produce are machine-made. Say so when accuracy matters, and never present a translation as a quotation of the source.

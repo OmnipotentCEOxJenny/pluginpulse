@@ -5,7 +5,7 @@ description: Build the weekly "Movers & Shakers" digest from PluginPulse snapsho
 
 # Movers & Shakers digest
 
-Follow `rules/pillars-and-scope.mdc`. Required. Answer in the user's language.
+Follow `rules/pillars-and-scope.mdc`. Required. Answer in the user's language; keep commands, file names and status labels unchanged.
 
 ## Workflow
 1. Make sure at least one snapshot exists (skill `pluginpulse-snapshot`).

@@ -1,17 +1,18 @@
 # PluginPulse
 
-![PluginPulse logo](assets/logo.png)
-
 PluginPulse is a free, read-only tracker of **public** plugin data. Once a day it takes a snapshot of the official MCP Registry, GitHub stars, forks and releases for the repos you choose, and the public marketplace page at https://x.ai/bot/marketplace. Once a week it writes a **Movers & Shakers** digest: what is new, what was updated, what is rising by star growth, and how many listings each category has. Every number names its source and its capture time in Eastern Time (ET). It makes no install or rating claims.
+
+![PluginPulse logo](assets/logo.png)
 
 ## Project status: done, pending, uncertain
 **Done**
+- 2026-10-20: v1.0.1 applies the Omnipotent README template: honest-assessment section, exact pillars, 23-language TRANSLATIONS.md.
 - 2026-10-20: v1.0.0 built and tested with live data: a real snapshot (MCP Registry, 8 GitHub repos, the marketplace page; 38 requests, all HTTP 200 except `releases/latest` 404 for repos that have tags but no GitHub Release, reported as "no GitHub Release"; on day one the registry read hit the 20-page cap and is labeled partial), a real digest, manifest valid JSON, skill frontmatter valid, every file link resolves. Example in `examples/`.
 - Publisher terms read (Cursor Marketplace Publisher Terms, last updated May 6, 2026): no conflict found. PluginPulse is free, MIT-licensed, collects only what its stated function needs and makes no unsubstantiated claims.
 
 **Pending**
 - Marketplace submission: not submitted yet.
-- Translated summaries below are machine-made and not reviewed by native speakers. Corrections welcome through an issue.
+- Translated summaries in TRANSLATIONS.md are machine-made and not reviewed by native speakers. Corrections welcome through an issue.
 - "Rising" needs 7 or more days of daily snapshots before it ranks anything.
 
 **Uncertain**
@@ -50,9 +51,9 @@ PluginPulse runs on your machine and sends nothing anywhere except the read requ
 - Builder: Jenny Echo
 
 ## Rob Domaine's four pillars
-1. Trustworthy, honest, real data, truthful: every number is sourced and timed; nothing is estimated.
-2. Use only legitimate means: official APIs and robots.txt-allowed pages only, with honest identification.
-3. Double-check everything: each digest number is checked against its snapshot.
+1. Trustworthy, honest, real data, truthful: never invent; anything unchecked is marked UNVERIFIED.
+2. Use only legitimate means: legitimate, proven sources and methods; unreliable sources rejected.
+3. Double-check everything: every finding is confirmed by two independent checks, and the report shows both.
 4. Stay within the law and rules always: local, county, state, federal and platform rules.
 
 ## Components
@@ -65,30 +66,22 @@ PluginPulse runs on your machine and sends nothing anywhere except the read requ
 - `examples/digest-2026-10-20.md`: a real digest from the first test run.
 
 ## Languages
-These summaries are machine-made translations and have not been reviewed by native speakers. The English text is authoritative.
-
-- **Español:** PluginPulse es un plugin gratuito de solo lectura que toma instantáneas diarias de datos públicos de plugins y publica un resumen semanal, con la fuente y la hora de cada número.
-- **Français:** PluginPulse est un plugin gratuit en lecture seule qui prend chaque jour un instantané de données publiques sur les plugins et produit un résumé hebdomadaire, avec la source et l'heure de chaque chiffre.
-- **Deutsch:** PluginPulse ist ein kostenloses, rein lesendes Plugin, das täglich öffentliche Plugin-Daten erfasst und eine wöchentliche Übersicht erstellt, mit Quelle und Uhrzeit zu jeder Zahl.
-- **Português:** PluginPulse é um plugin gratuito, somente leitura, que registra diariamente dados públicos de plugins e gera um resumo semanal, com a fonte e o horário de cada número.
-- **Italiano:** PluginPulse è un plugin gratuito di sola lettura che acquisisce ogni giorno dati pubblici sui plugin e crea un riepilogo settimanale, con fonte e orario di ogni numero.
-- **Nederlands:** PluginPulse is een gratis, alleen-lezen plug-in die dagelijks openbare plug-ingegevens vastlegt en een wekelijks overzicht maakt, met bron en tijdstip bij elk getal.
-- **Polski:** PluginPulse to darmowa wtyczka tylko do odczytu, która codziennie zapisuje publiczne dane o wtyczkach i tworzy cotygodniowe podsumowanie, ze źródłem i czasem każdej liczby.
-- **Русский:** PluginPulse — бесплатный плагин только для чтения, который ежедневно сохраняет публичные данные о плагинах и составляет еженедельную сводку с источником и временем каждой цифры.
-- **Українська:** PluginPulse — безкоштовний плагін лише для читання, що щодня зберігає публічні дані про плагіни й складає щотижневий огляд із джерелом і часом кожного числа.
-- **Türkçe:** PluginPulse, herkese açık eklenti verilerinin günlük anlık görüntüsünü alan ve her sayının kaynağını ve saatini belirten haftalık bir özet hazırlayan ücretsiz, salt okunur bir eklentidir.
-- **العربية:** PluginPulse إضافة مجانية للقراءة فقط تلتقط يوميًا بيانات عامة عن الإضافات وتعدّ ملخصًا أسبوعيًا، مع ذكر مصدر كل رقم ووقت التقاطه.
-- **עברית:** PluginPulse הוא תוסף חינמי לקריאה בלבד שמצלם מדי יום נתונים ציבוריים על תוספים ומפיק סיכום שבועי, עם המקור והשעה של כל מספר.
-- **فارسی:** PluginPulse افزونه‌ای رایگان و فقط‌خواندنی است که هر روز از داده‌های عمومی افزونه‌ها تصویر می‌گیرد و خلاصه‌ای هفتگی با منبع و زمان هر عدد تهیه می‌کند.
-- **हिन्दी:** PluginPulse एक मुफ़्त, केवल-पढ़ने वाला प्लगइन है जो रोज़ सार्वजनिक प्लगइन डेटा का स्नैपशॉट लेता है और हर संख्या के स्रोत व समय के साथ साप्ताहिक सारांश बनाता है।
-- **বাংলা:** PluginPulse একটি বিনামূল্যের, শুধু-পড়ার প্লাগইন, যা প্রতিদিন প্রকাশ্য প্লাগইন ডেটার স্ন্যাপশট নেয় এবং প্রতিটি সংখ্যার উৎস ও সময়সহ সাপ্তাহিক সারাংশ তৈরি করে।
-- **اردو:** PluginPulse ایک مفت، صرف پڑھنے والا پلگ اِن ہے جو روزانہ عوامی پلگ اِن ڈیٹا کا اسنیپ شاٹ لیتا ہے اور ہر عدد کے ماخذ اور وقت کے ساتھ ہفتہ وار خلاصہ بناتا ہے۔
-- **中文（简体）:** PluginPulse 是一款免费的只读插件，每天记录公开的插件数据并生成每周摘要，每个数字都注明来源和采集时间。
-- **日本語:** PluginPulse は、公開されているプラグインのデータを毎日記録し、各数値の出典と取得時刻を付けた週間まとめを作る無料の読み取り専用プラグインです。
-- **한국어:** PluginPulse는 공개 플러그인 데이터를 매일 기록하고 모든 숫자에 출처와 수집 시각을 표시한 주간 요약을 만드는 무료 읽기 전용 플러그인입니다.
-- **Bahasa Indonesia:** PluginPulse adalah plugin gratis hanya-baca yang mencatat data plugin publik setiap hari dan membuat ringkasan mingguan, lengkap dengan sumber dan waktu setiap angka.
-- **Tiếng Việt:** PluginPulse là plugin miễn phí, chỉ đọc, ghi lại dữ liệu công khai về plugin mỗi ngày và tạo bản tóm tắt hằng tuần, kèm nguồn và thời điểm của từng con số.
-- **Kiswahili:** PluginPulse ni programu-jalizi ya bure ya kusoma tu inayonasa kila siku data ya umma ya programu-jalizi na kutoa muhtasari wa kila wiki, ikitaja chanzo na wakati wa kila nambari.
+The AI answers in the user's language and keeps commands, file names and status labels unchanged. Title, description and honest-assessment summaries in 23 languages are in [TRANSLATIONS.md](TRANSLATIONS.md): es Español, fr Français, pt Português, de Deutsch, it Italiano, nl Nederlands, pl Polski, ru Русский, uk Українська, tr Türkçe, ar العربية, he עברית, fa فارسی, hi हिन्दी, bn বাংলা, ur اردو, zh 简体中文, ja 日本語, ko 한국어, id Bahasa Indonesia, vi Tiếng Việt, sw Kiswahili, tl Tagalog / Filipino. They are machine translations, not yet reviewed by native speakers; the English text is authoritative.
 
 ## License
 MIT. See `LICENSE`.
+
+## Honest assessment: what this plugin cannot do
+Written to be fully transparent. If something here is wrong or out of date, please open an issue.
+
+- No install or rating data: the public marketplace shows `installCount: 0` for every listing and no ratings, so PluginPulse never ranks or reports by installs or ratings.
+- "Rising" needs 7 or more days of daily snapshots. Before that, the digest says so and lists current star counts for reference only.
+- Registry reads can be partial: each run reads at most 20 pages of the MCP Registry, and when it hits the cap the snapshot and digest are labeled partial.
+- The marketplace reader depends on the public page's current layout (data embedded in the page, not a documented API). If the layout changes, it reports "page layout changed" instead of guessing.
+- Release data comes from GitHub Releases. Repos that publish only git tags (including Rob's own plugins) show "no GitHub Release", even when tagged versions exist.
+- Star growth covers only plugins with a public GitHub repository. Plugins without one are listed but not ranked.
+- GitHub requests are unauthenticated and capped at 50 per run (GitHub allows 60 per hour), so large watch lists are spread across runs.
+- Marketplace: not submitted yet; it is not a listed plugin.
+- Translations: the 23 translated summaries in [TRANSLATIONS.md](TRANSLATIONS.md) are machine-made and have not been reviewed by native speakers. The English text is authoritative.
+- It is not legal advice and cannot guarantee that any particular use is lawful; you remain responsible for how you use it.
+- Rules and compliance: it is built to follow all local, county, state and federal laws and every platform's rules. It uses no paid services, never bypasses logins, paywalls, CAPTCHAs or access controls, and never claims a feature it does not have.

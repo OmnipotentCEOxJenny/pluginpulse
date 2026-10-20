@@ -5,7 +5,7 @@ description: Take a read-only daily snapshot of public plugin data (official MCP
 
 # PluginPulse snapshot
 
-Follow `rules/pillars-and-scope.mdc`. Required. Answer in the user's language.
+Follow `rules/pillars-and-scope.mdc`. Required. Answer in the user's language; keep commands, file names and status labels unchanged.
 
 ## Workflow
 1. **Set up (free, once):** `python3 -m venv .venv && .venv/bin/pip install -r scripts/requirements.txt` (only `requests==2.32.3`).
