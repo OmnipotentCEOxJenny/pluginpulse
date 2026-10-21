@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.2 (2026-10-21)
+- Fix: the movers-and-shakers skill description had an unquoted ": " that strict YAML parsers reject, so the front matter could fail to load. The description is now quoted; wording unchanged.
+
 ## 1.0.1 (2026-10-20)
 - README follows the Omnipotent template: title, description, logo, content, Rob Domaine's four pillars in exact wording, and a closing "Honest assessment: what this plugin cannot do" section (no install/rating data, rising needs 7+ days, partial registry reads, page-layout dependence, tags vs GitHub Releases, GitHub-only star growth, unreviewed translations, compliance).
 - New TRANSLATIONS.md: title, description and honest assessment with the specific limits in 23 languages (adds Tagalog / Filipino), machine-made and not native-reviewed.

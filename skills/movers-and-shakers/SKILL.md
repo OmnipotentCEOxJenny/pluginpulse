@@ -1,6 +1,6 @@
 ---
 name: movers-and-shakers
-description: Build the weekly "Movers & Shakers" digest from PluginPulse snapshots: new and updated MCP servers, tracked repos with stars and releases, rising by star growth (7+ days of history), and marketplace category counts. Use when a user asks what is new, trending or rising among plugins.
+description: 'Build the weekly "Movers & Shakers" digest from PluginPulse snapshots: new and updated MCP servers, tracked repos with stars and releases, rising by star growth (7+ days of history), and marketplace category counts. Use when a user asks what is new, trending or rising among plugins.'
 ---
 
 # Movers & Shakers digest

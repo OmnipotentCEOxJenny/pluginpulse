@@ -6,6 +6,7 @@ PluginPulse is a free, read-only tracker of **public** plugin data. Once a day i
 
 ## Project status: done, pending, uncertain
 **Done**
+- 2026-10-21: v1.0.2 fixes the movers-and-shakers skill front matter (quoted description so strict YAML parsers load it).
 - 2026-10-20: v1.0.1 applies the Omnipotent README template: honest-assessment section, exact pillars, 23-language TRANSLATIONS.md.
 - 2026-10-20: v1.0.0 built and tested with live data: a real snapshot (MCP Registry, 8 GitHub repos, the marketplace page; 38 requests, all HTTP 200 except `releases/latest` 404 for repos that have tags but no GitHub Release, reported as "no GitHub Release"; on day one the registry read hit the 20-page cap and is labeled partial), a real digest, manifest valid JSON, skill frontmatter valid, every file link resolves. Example in `examples/`.
 - Publisher terms read (Cursor Marketplace Publisher Terms, last updated May 6, 2026): no conflict found. PluginPulse is free, MIT-licensed, collects only what its stated function needs and makes no unsubstantiated claims.
