@@ -21,7 +21,7 @@ from collections import Counter
 from zoneinfo import ZoneInfo
 import requests
 
-VERSION = "1.0.4"
+VERSION = "1.0.5"
 ET = ZoneInfo("America/New_York")
 REGISTRY = "https://registry.modelcontextprotocol.io/v0/servers"
 MARKETPLACE = "https://x.ai/bot/marketplace"
@@ -241,7 +241,11 @@ def cmd_digest(a):
                      "Keep the daily snapshot running.")
         else:
             for g, r, growth in sorted(rows, key=lambda x: x[0], reverse=True)[:10]:
-                L.append(f"- {r['repo']}: +{growth} stars since {first['_date']}")
+                if growth is None:
+                    L.append(f"- {r['repo']}: no baseline (not in the {first['_date']} snapshot); "
+                             f"{r['stars']} stars now, growth not ranked")
+                else:
+                    L.append(f"- {r['repo']}: {growth:+d} stars since {first['_date']}")
         L.append("")
     mp = src.get("marketplace", {})
     if "listings" in mp:

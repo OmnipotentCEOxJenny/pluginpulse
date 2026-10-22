@@ -5,5 +5,7 @@ OmnipotentCEOxJenny/creative-switchboard
 OmnipotentCEOxJenny/truthtrace
 OmnipotentCEOxJenny/courtesycrawl
 OmnipotentCEOxJenny/pluginpulse
+OmnipotentCEOxJenny/inplug-plugin
+OmnipotentCEOxJenny/lingolink
 modelcontextprotocol/servers
 modelcontextprotocol/registry

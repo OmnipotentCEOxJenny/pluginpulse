@@ -14,7 +14,7 @@ PluginPulse is a free, read-only tracker of **public** plugin data. Once a day i
 **Pending**
 - Marketplace submission: not submitted yet.
 - Translated summaries in TRANSLATIONS.md are machine-made and not reviewed by native speakers. Corrections welcome through an issue.
-- "Rising" needs 7 or more days of daily snapshots before it ranks anything.
+- "Rising" ranks only when the oldest and newest snapshots are at least 7 days apart (with daily snapshots, that is the 8th day). A repo missing from the oldest snapshot shows "no baseline" and is not ranked.
 
 **Uncertain**
 - The marketplace page is read from data embedded in the public page, not a documented API. If its layout changes, PluginPulse reports "page layout changed" rather than guessing.
@@ -76,7 +76,7 @@ MIT. See `LICENSE`.
 Written to be fully transparent. If something here is wrong or out of date, please open an issue.
 
 - No install or rating data: the public marketplace shows `installCount: 0` for every listing and no ratings, so PluginPulse never ranks or reports by installs or ratings.
-- "Rising" needs 7 or more days of daily snapshots. Before that, the digest says so and lists current star counts for reference only.
+- "Rising" needs the oldest and newest snapshots to be at least 7 days apart (8 daily snapshots). Before that, the digest says so and lists current star counts for reference only. Repos added after the oldest snapshot show "no baseline" instead of a growth number.
 - Registry reads can be partial: each run reads at most 20 pages of the MCP Registry, and when it hits the cap the snapshot and digest are labeled partial.
 - The marketplace reader depends on the public page's current layout (data embedded in the page, not a documented API). If the layout changes, it reports "page layout changed" instead of guessing.
 - Release data comes from GitHub Releases. Repos that publish only git tags (including Rob's own plugins) show "no GitHub Release", even when tagged versions exist.

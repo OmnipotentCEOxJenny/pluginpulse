@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.5 (2026-10-22)
+- Fix: in the Rising list, a repo missing from the oldest snapshot printed "+None stars". It now says "no baseline ... growth not ranked", and growth is printed with its sign (e.g. +3, -1).
+- `scripts/repos.txt` now tracks all 8 Omnipotent plugins (adds inplug-plugin and lingolink): 10 repos, 20 of the 50 budgeted GitHub requests.
+- README now matches the code: Rising ranks only when the oldest and newest snapshots are at least 7 days apart (8 daily snapshots).
+
 ## 1.0.4 (2026-10-22)
 - Registry snapshot: if a later page errors (after one polite retry on a 5xx), the pages already read are kept and flagged `"partial": true` with the error, instead of dropping the whole registry section. The digest labels such data PARTIAL.
 - `.gitignore` also ignores Python cache folders.
