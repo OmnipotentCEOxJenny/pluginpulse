@@ -12,6 +12,7 @@
   "license": "MIT",
   "logo": "assets/logo.png",
   "keywords": [
+    "pluginpulse",
     "plugin-stats",
     "marketplace-trends",
     "mcp-registry",
@@ -47,6 +48,7 @@
     "python",
     "transparency",
     "marketplace-watch",
-    "multilingual"
+    "multilingual",
+    "jenny-echo"
   ]
 }
