@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.6 (2026-10-22)
+- `scripts/repos.txt`: TruthTrace was renamed TruthSweep; now tracks OmnipotentCEOxJenny/truthsweep. Dated example outputs left as recorded.
+
 ## 1.0.5 (2026-10-22)
 - Fix: in the Rising list, a repo missing from the oldest snapshot printed "+None stars". It now says "no baseline ... growth not ranked", and growth is printed with its sign (e.g. +3, -1).
 - `scripts/repos.txt` now tracks all 8 Omnipotent plugins (adds inplug-plugin and lingolink): 10 repos, 20 of the 50 budgeted GitHub requests.

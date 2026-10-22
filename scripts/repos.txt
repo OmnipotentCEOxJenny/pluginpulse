@@ -2,7 +2,7 @@
 OmnipotentCEOxJenny/course-correction
 OmnipotentCEOxJenny/browsershield
 OmnipotentCEOxJenny/creative-switchboard
-OmnipotentCEOxJenny/truthtrace
+OmnipotentCEOxJenny/truthsweep
 OmnipotentCEOxJenny/courtesycrawl
 OmnipotentCEOxJenny/pluginpulse
 OmnipotentCEOxJenny/inplug-plugin
