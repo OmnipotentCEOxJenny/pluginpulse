@@ -21,7 +21,7 @@ from collections import Counter
 from zoneinfo import ZoneInfo
 import requests
 
-VERSION = "1.0.0"
+VERSION = "1.0.4"
 ET = ZoneInfo("America/New_York")
 REGISTRY = "https://registry.modelcontextprotocol.io/v0/servers"
 MARKETPLACE = "https://x.ai/bot/marketplace"
@@ -80,9 +80,19 @@ def snap_registry(c, pages, since_days):
         params = {"limit": 100, "version": "latest", "updated_since": since}
         if cursor:
             params["cursor"] = cursor
-        r = c.get(REGISTRY, params=params)
-        r.raise_for_status()
-        d = r.json()
+        try:
+            r = c.get(REGISTRY, params=params)
+            if r.status_code >= 500:  # one polite retry on a server error
+                time.sleep(5)
+                r = c.get(REGISTRY, params=params)
+            r.raise_for_status()
+            d = r.json()
+        except Exception as e:
+            if not n:
+                raise  # nothing read yet: report the whole source as an error
+            # keep the pages already read, flagged as partial
+            return {"source": REGISTRY, "updated_since_utc": since, "pages_read": n, "complete": False,
+                    "partial": True, "error": f"page {n + 1}: {e}", "servers": servers}
         for item in d.get("servers", []):
             s, meta = item.get("server", {}), item.get("_meta", {}).get(
                 "io.modelcontextprotocol.registry/official", {})
@@ -204,7 +214,7 @@ def cmd_digest(a):
         upd = [s for s in reg["servers"] if recent(s["updatedAt"], since) and s not in new]
         L += [f"## MCP Registry (source: {REGISTRY}, captured {cap})",
               f"- Servers changed since {reg.get('updated_since_utc', '?')} (UTC; latest versions, {reg['pages_read']} page(s), "
-              f"{'complete' if reg['complete'] else 'partial: page limit reached'}): {len(reg['servers'])}",
+              f"{'complete' if reg['complete'] else ('PARTIAL: ' + reg['error'] if reg.get('partial') else 'partial: page limit reached')}): {len(reg['servers'])}",
               f"- Published in last {a.days} days (new server or new version; the registry does not separate them): {len(new)}", f"- Metadata updated in last {a.days} days without a new version: {len(upd)}", ""]
         for s in sorted(new, key=lambda s: s["publishedAt"], reverse=True)[:10]:
             L.append(f"  - PUBLISHED `{s['name']}` v{s['version']} (published {s['publishedAt'][:10]})")

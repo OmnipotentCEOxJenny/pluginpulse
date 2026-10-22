@@ -1,7 +1,7 @@
 {
   "name": "pluginpulse",
   "displayName": "PluginPulse",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Free, read-only tracker of public plugin data: daily snapshots of the MCP Registry, GitHub stars and releases, and marketplace pages, plus a weekly Movers & Shakers digest with every number sourced and timed.",
   "author": {
     "name": "Rob Domaine / Omnipotent Media LLC"
