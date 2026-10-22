@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.3 (2026-10-21)
+- Added `tests/check_frontmatter.py`: a strict YAML front-matter check (PyYAML `safe_load`) for every SKILL.md and rules .mdc file, plus a plugin.json JSON check. Run `python3 tests/check_frontmatter.py` from the repo root; it catches the unquoted-colon bug fixed in PluginPulse 1.0.2.
+- `.gitignore` now ignores `data/` (local daily snapshots are not committed).
+- No behavior changes to skills or rules.
+
 ## 1.0.2 (2026-10-21)
 - Fix: the movers-and-shakers skill description had an unquoted ": " that strict YAML parsers reject, so the front matter could fail to load. The description is now quoted; wording unchanged.
 
