@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.7 (2026-10-23)
+- Search keywords: 33 to 40 (added GithubForks, MarketplaceSnapshot, ReadOnly, StarHistory, ReleaseTracker, RegistryWatch, PublicData), per Rob's keyword rules.
+- Local tests re-run and passed. Not tested in-app. Not submitted to the marketplace.
+
 ## 1.0.6 (2026-10-22)
 - `scripts/repos.txt`: TruthTrace was renamed TruthSweep; now tracks OmnipotentCEOxJenny/truthsweep. Dated example outputs left as recorded.
 
