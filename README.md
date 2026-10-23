@@ -7,7 +7,7 @@ PluginPulse is a free, read-only tracker of **public** plugin data. Once a day i
 ## Project status: done, pending, uncertain
 **Done**
 - 2026-10-21: v1.0.2 fixes the movers-and-shakers skill front matter (quoted description so strict YAML parsers load it).
-- 2026-10-20: v1.0.1 applies the Omnipotent README template: honest-assessment section, exact pillars, 23-language TRANSLATIONS.md.
+- 2026-10-20: v1.0.1 applies the Omnipotent README template: honest-assessment section, 23-language TRANSLATIONS.md.
 - 2026-10-20: v1.0.0 built and tested with live data: a real snapshot (MCP Registry, 8 GitHub repos, the marketplace page; 38 requests, all HTTP 200 except `releases/latest` 404 for repos that have tags but no GitHub Release, reported as "no GitHub Release"; on day one the registry read hit the 20-page cap and is labeled partial), a real digest, manifest valid JSON, skill frontmatter valid, every file link resolves. Example in `examples/`.
 - Publisher terms read (Cursor Marketplace Publisher Terms, last updated May 6, 2026): no conflict found. PluginPulse is free, MIT-licensed, collects only what its stated function needs and makes no unsubstantiated claims.
 
@@ -51,19 +51,13 @@ PluginPulse runs on your machine and sends nothing anywhere except the read requ
 - Inventor and publisher: Rob Domaine / Omnipotent Media LLC
 - Builder: Jenny Echo
 
-## Rob Domaine's four pillars
-1. Trustworthy, honest, real data, truthful: never invent; anything unchecked is marked UNVERIFIED.
-2. Use only legitimate means: legitimate, proven sources and methods; unreliable sources rejected.
-3. Double-check everything: every finding is confirmed by two independent checks, and the report shows both.
-4. Stay within the law and rules always: local, county, state, federal and platform rules.
-
 ## Components
 - `scripts/pluginpulse.py`: snapshot and digest commands.
 - `scripts/repos.txt`: GitHub repos to track.
 - `scripts/requirements.txt`: pinned dependency.
 - `skills/pluginpulse-snapshot`: taking and checking a daily snapshot.
 - `skills/movers-and-shakers`: building and summarizing the weekly digest.
-- `rules/pillars-and-scope.mdc`: the pillars and scope.
+- `rules/scope.mdc`: the scope.
 - `examples/digest-2026-10-20.md`: a real digest from the first test run.
 
 ## Languages

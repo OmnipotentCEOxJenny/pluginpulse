@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.9 (2026-10-23)
+- Remove internal notes from the README, translations, rule file (renamed to `rules/scope.mdc` where applicable) and skills. Local tests re-run and passed. Not tested in-app. Not submitted to the marketplace.
+
 ## 1.0.8 (2026-10-23)
 - Translations: each language section in TRANSLATIONS.md now starts with a one-line notice in that language saying it is a machine translation, not reviewed by a native speaker, and that the English version is authoritative. README Languages section notes this. No behavior changes.
 - Local tests re-run and passed. Not tested in-app. Not submitted to the marketplace.
@@ -29,9 +32,9 @@
 - Fix: the movers-and-shakers skill description had an unquoted ": " that strict YAML parsers reject, so the front matter could fail to load. The description is now quoted; wording unchanged.
 
 ## 1.0.1 (2026-10-20)
-- README follows the Omnipotent template: title, description, logo, content, Rob Domaine's four pillars in exact wording, and a closing "Honest assessment: what this plugin cannot do" section (no install/rating data, rising needs 7+ days, partial registry reads, page-layout dependence, tags vs GitHub Releases, GitHub-only star growth, unreviewed translations, compliance).
+- README follows the Omnipotent template: title, description, logo, content, and a closing "Honest assessment: what this plugin cannot do" section (no install/rating data, rising needs 7+ days, partial registry reads, page-layout dependence, tags vs GitHub Releases, GitHub-only star growth, unreviewed translations, compliance).
 - New TRANSLATIONS.md: title, description and honest assessment with the specific limits in 23 languages (adds Tagalog / Filipino), machine-made and not native-reviewed.
 - Skills and rule: answer in the user's language; keep commands, file names and status labels unchanged.
 
 ## 1.0.0 (2026-10-20)
-- First release: `scripts/pluginpulse.py` (snapshot and digest commands; MCP Registry API with paging and updated_since, GitHub REST unauthenticated within a 50-request budget, public marketplace page read once with robots.txt check and Retry-After handling), pluginpulse-snapshot and movers-and-shakers skills, pillars rule, real example digest, logo, translated summaries in 22 languages (machine-made, not native-reviewed).
+- First release: `scripts/pluginpulse.py` (snapshot and digest commands; MCP Registry API with paging and updated_since, GitHub REST unauthenticated within a 50-request budget, public marketplace page read once with robots.txt check and Retry-After handling), pluginpulse-snapshot and movers-and-shakers skills, real example digest, logo, translated summaries in 22 languages (machine-made, not native-reviewed).

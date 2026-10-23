@@ -1,0 +1,9 @@
+---
+description: PluginPulse scope. Read-only public data only; every number labeled with its source and capture time; no install or rating claims.
+alwaysApply: false
+---
+
+# Language
+- Answer in the user's language; keep commands, file names and status labels unchanged. Detect the language the user writes in. If it is unclear, ask which language they want.
+- Keep commands, code, file names, paths, URLs, repo and server names exactly as written; do not translate them.
+- Translations you produce are machine-made. Say so when accuracy matters, and never present a translation as a quotation of the source.

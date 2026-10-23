@@ -5,12 +5,12 @@ description: 'Build the weekly "Movers & Shakers" digest from PluginPulse snapsh
 
 # Movers & Shakers digest
 
-Follow `rules/pillars-and-scope.mdc`. Required. Answer in the user's language; keep commands, file names and status labels unchanged.
+Follow `rules/scope.mdc`. Required. Answer in the user's language; keep commands, file names and status labels unchanged.
 
 ## Workflow
 1. Make sure at least one snapshot exists (skill `pluginpulse-snapshot`).
 2. Run `.venv/bin/python scripts/pluginpulse.py digest --out pluginpulse-data [--days 7]`.
-3. Open `pluginpulse-data/digest-YYYY-MM-DD.md` and check every number against the snapshot (pillar 3).
+3. Open `pluginpulse-data/digest-YYYY-MM-DD.md` and check every number against the snapshot.
 4. Summarize for the user:
    - **New** and **updated** MCP servers in the window (say if the registry read was partial).
    - **Tracked repos:** stars, forks, latest release, last push, each with source and capture time (ET).
