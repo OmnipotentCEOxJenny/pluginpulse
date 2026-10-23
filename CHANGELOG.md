@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.8 (2026-10-23)
+- Translations: each language section in TRANSLATIONS.md now starts with a one-line notice in that language saying it is a machine translation, not reviewed by a native speaker, and that the English version is authoritative. README Languages section notes this. No behavior changes.
+- Local tests re-run and passed. Not tested in-app. Not submitted to the marketplace.
+
 ## 1.0.7 (2026-10-23)
 - Search keywords: 33 to 40 (added GithubForks, MarketplaceSnapshot, ReadOnly, StarHistory, ReleaseTracker, RegistryWatch, PublicData), per Rob's keyword rules.
 - Local tests re-run and passed. Not tested in-app. Not submitted to the marketplace.

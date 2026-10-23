@@ -21,7 +21,7 @@ from collections import Counter
 from zoneinfo import ZoneInfo
 import requests
 
-VERSION = "1.0.7"
+VERSION = "1.0.8"
 ET = ZoneInfo("America/New_York")
 REGISTRY = "https://registry.modelcontextprotocol.io/v0/servers"
 MARKETPLACE = "https://x.ai/bot/marketplace"

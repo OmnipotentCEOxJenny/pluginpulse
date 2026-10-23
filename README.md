@@ -67,7 +67,7 @@ PluginPulse runs on your machine and sends nothing anywhere except the read requ
 - `examples/digest-2026-10-20.md`: a real digest from the first test run.
 
 ## Languages
-The AI answers in the user's language and keeps commands, file names and status labels unchanged. Title, description and honest-assessment summaries in 23 languages are in [TRANSLATIONS.md](TRANSLATIONS.md): es Español, fr Français, pt Português, de Deutsch, it Italiano, nl Nederlands, pl Polski, ru Русский, uk Українська, tr Türkçe, ar العربية, he עברית, fa فارسی, hi हिन्दी, bn বাংলা, ur اردو, zh 简体中文, ja 日本語, ko 한국어, id Bahasa Indonesia, vi Tiếng Việt, sw Kiswahili, tl Tagalog / Filipino. They are machine translations, not yet reviewed by native speakers; the English text is authoritative.
+The AI answers in the user's language and keeps commands, file names and status labels unchanged. Title, description and honest-assessment summaries in 23 languages are in [TRANSLATIONS.md](TRANSLATIONS.md): es Español, fr Français, pt Português, de Deutsch, it Italiano, nl Nederlands, pl Polski, ru Русский, uk Українська, tr Türkçe, ar العربية, he עברית, fa فارسی, hi हिन्दी, bn বাংলা, ur اردو, zh 简体中文, ja 日本語, ko 한국어, id Bahasa Indonesia, vi Tiếng Việt, sw Kiswahili, tl Tagalog / Filipino. They are machine translations, not yet reviewed by native speakers; the English text is authoritative. Each language section in TRANSLATIONS.md also starts with a one-line machine-translation notice in that language.
 
 ## License
 MIT. See `LICENSE`.
